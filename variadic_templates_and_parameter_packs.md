@@ -129,11 +129,11 @@ constexpr auto sum(Ts... args) {
 
 ### Identity values for empty packs
 
-| Operator | Default Value |   |         |
-| -------- | ------------- | - | ------- |
-| `&&`     | `true`        |   |         |
-| `        |               | ` | `false` |
-| `,`      | `void()`      |   |         |
+| Operator | Default Value |   
+| -------- | ------------- |
+| `&&`     | `true`        |
+| `||`     | `false`       |
+| `,`      | `void()`      |
 
 ---
 
@@ -207,17 +207,3 @@ struct some_struct {
 some_struct s {1, 2.0f, "hello"};
 print_fields(s);
 ```
-
----
-
-✅ **Key takeaways**
-
-* Variadic templates generalize functions/classes to arbitrary argument counts.
-* Packs must be expanded explicitly (`...`).
-* Fold expressions eliminate recursion for simple reductions.
-* C++20 adds convenience (abbreviated templates, lambda packs).
-* C++26 will improve usability with pack indexing and structured bindings.
-
----
-
-Would you like me to add a **short “cheat sheet” section** (like a quick reference table for all expansions and fold operators)? It fits nicely at the end if you plan to share this as GitHub documentation.
