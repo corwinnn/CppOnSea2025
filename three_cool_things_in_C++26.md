@@ -74,8 +74,8 @@ class(interface) IFoo {
 };
 ```
 
-> ❌ Today we **cannot** emit code in the same translation unit automatically
-> ✅ In **C++26**, however, we **can reflect and output** metadata to another file
+> Today we **cannot** emit code in the same translation unit automatically
+> In **C++26**, however, we **can reflect and output** metadata to another file
 
 Example (valid in proposed reflection TS syntax):
 
@@ -111,13 +111,13 @@ int main() {
 
 ---
 
-### 🔧 Real Reflection Use Cases
+### Real Reflection Use Cases
 
-* ✅ JSON serializer/deserializer auto-generation
-* ✅ Automatic language bindings (Python, JS, C#...)
-* ✅ Binary metadata generation
-* ✅ Replace Qt moc / COM / CX / IDL code generators
-* ✅ Generate editor bindings, inspector panels, property sheets
+*  JSON serializer/deserializer auto-generation
+*  Automatic language bindings (Python, JS, C#...)
+*  Binary metadata generation
+*  Replace Qt moc / COM / CX / IDL code generators
+*  Generate editor bindings, inspector panels, property sheets
 
 ---
 
