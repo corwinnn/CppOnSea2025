@@ -121,7 +121,7 @@ int main() {
 
 ---
 
-## 3. New Async Pipeline Model (C++26 Executors)
+## 3. New Async Model
 
 ### Current C++ async style
 
@@ -139,17 +139,5 @@ auto work = schedule(pool)
 // code here runs potentially concurrently with f
 auto res = sync_wait(work).value();
 ```
-
-> Think of it as **ranges but for execution** — a declarative pipeline of asynchronous tasks.
-
 ---
 
-## Summary — Three Emerging Powers in C++26+
-
-| Feature                              | Purpose                                                                |
-| ------------------------------------ | ---------------------------------------------------------------------- |
-| **Erroneous Behaviour**              | Make failures *detectable and defined*, improve debug workflow         |
-| **Reflection-Based Code Generation** | Remove external preprocessors and enable compile-time meta-programming |
-| **Async Pipelines**                  | Treat execution like ranges — composable, lazy, structured             |
-
----
